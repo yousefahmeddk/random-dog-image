@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Dogs Images API</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="randomDog">
+
+        <% if (image) { %>
+          <img src="<%= image %>" alt="Random Dog" />
+          <p>File Size Bytes: <%= size %></p>
+        <% } else { %>
+          <p>Click the button to get a random dog 🐶</p>
+        <% } %>
+
+        <form method="POST" action="/random">
+          <button type="submit">Random</button>
+        </form>
+
+      </div>
+    </div>
+  </body>
+</html>

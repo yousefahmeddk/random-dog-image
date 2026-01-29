@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  min-height: 100vh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.randomDog {
+  max-width: 300px;
+  background-color: #eee;
+  padding: 1rem;
+}
+image {
+  max-width: 250px;
+  width: 100%;
+  padding: 15px;
+}
+button {
+  background-color: #2ecc71;
+  padding: 5px 10px;
+  color: white;
+  width: 100%;
+}
